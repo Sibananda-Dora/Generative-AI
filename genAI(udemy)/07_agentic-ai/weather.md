@@ -1,0 +1,1 @@
+https://wttr.in/Balangir?format=%C+%t

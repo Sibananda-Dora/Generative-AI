@@ -1,9 +1,12 @@
 from openai import OpenAI
 import json
+# from dotenv import load_dotenv
 client = OpenAI(
-    api_key="AIzaSyAF1xlIR1fTdnYeN8T8oKvzmMn1Yhruc-g",
-    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+    api_key="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",
+    base_url="https://api.groq.com/openai/v1",
 )
+# load_dotenv()
+
 SYSTEM_PROMPT=''' 
  Let's  test something okay. So let's make this okay where user gives you a prompt and you try to solve using chain-of-thought where there is a start , plan(do some research on it and make more plans) and then provide the output
 
@@ -24,15 +27,15 @@ OUTPUT: {{"Step":"OUTPUT" "Description":" the solutin is 4"}}
 '''
 
 print("\n\\n\n\n")
-message_history=[
+message_history={
      {"role": "system", "content": SYSTEM_PROMPT},
-]
+}
 user_query=input(":->")
 d={"role": "system", "content": user_query}
 message_history.append(d)
 while True:
     response=client.chat.completions.create(
-        model="gemini-2.5-flash",
+        model="openai/gpt-oss-20b",
         response_format={"type":"json_object"},
         messages=message_history
         

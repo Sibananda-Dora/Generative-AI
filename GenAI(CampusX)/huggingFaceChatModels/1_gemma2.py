@@ -42,12 +42,12 @@ message_history = [
 user_query = input(":-> ")
 message_history.append({"role": "user", "content": user_query})
 
-while True:
-    response = client.invoke(user_query)
+# while True:
+response = client.invoke(user_query)
     
     # Access the content correctly
-    raw_result = response.content 
-    print(raw_result) # Adjust based on the actual structure of `response`
+raw_result = response.content 
+print(raw_result) # Adjust based on the actual structure of `response`
 #     message_history.append({"role": "assistant", "content": raw_result})
 #     parsed_results = json.loads(raw_result)
 

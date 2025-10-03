@@ -4,7 +4,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 model=ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
-    api_key="AIzaSyCVDThxo56lOp9fT9JfcrjWhU-1Opkg1kc"
+    api_key=""
 )
 parser=StrOutputParser()
 prompt1=PromptTemplate(

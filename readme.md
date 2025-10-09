@@ -1,13 +1,5 @@
 # GENERATIVE-AI
 
-The Codes are what I wrote during learning.
-
-## Technology Used
--Language - PYTHON
--LLMs - Used various models using APIs
-
-# GENERATIVE-AI
-
 This repository contains code and examples created during my learning process of Generative AI concepts.
 
 ## Features

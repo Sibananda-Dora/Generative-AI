@@ -8,7 +8,7 @@ from typing import Literal
 
 model=ChatGoogleGenerativeAI(
     model="gemini-2.5-flash-lite",
-    api_key="AIzaSyCVDThxo56lOp9fT9JfcrjWhU-1Opkg1kc"
+    api_key=""
 )
 class Feedback(BaseModel):
 

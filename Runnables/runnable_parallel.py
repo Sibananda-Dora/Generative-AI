@@ -5,11 +5,11 @@ from langchain.schema.runnable import RunnableSequence,RunnableParallel
 
 model=ChatGoogleGenerativeAI(
     model="gemini-2.5-flash-lite",
-    api_key="AIzaSyCVDThxo56lOp9fT9JfcrjWhU-1Opkg1kc"
+    api_key=""
 )
 model2=ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
-    api_key="AIzaSyCVDThxo56lOp9fT9JfcrjWhU-1Opkg1kc"
+    api_key=""
 )
 prompt1=PromptTemplate(
     template='Generate a Tweet on the topic given below./n {topic}',

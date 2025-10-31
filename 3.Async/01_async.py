@@ -6,7 +6,7 @@ async def brew(name):
     print(f"Finished: {name}")
 
 async def main():
-    await asyncio.gather(       #.gather() helps calling multiple times and it doon't  get blocked.
+    await asyncio.gather(       #.gather() helps calling multiple times and it don't  get blocked.
         brew("Masala Chai"),
         brew("Green Chai"),
         brew("Ginger Chai"),
